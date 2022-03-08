@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-body d-flex flex-column">
+        <h5 class="card-title">{{list.title}}</h5>
+        <div>
+            <ng-container *ngFor="let item of notCompleted">
+                <p class="card-text" style="margin: auto;">
+                    {{item.text}}
+                </p>
+            </ng-container>
+            <ng-container *ngFor="let item of completed">
+                <p class="card-text" style="margin: auto;">
+                    {{item.text}}
+                </p>
+            </ng-container>
+        </div>
+        <div class="row mt-auto">
+            <div class="col-lg">
+                <a class="btn btn-primary mt-auto" [routerLink]="['/to-do-list', list.id]">Edit</a>
+            </div>
+            <div class="col-lg">
+                <button type="button" class="btn btn-danger mt-auto" (click)="delete(list.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor="let list of lists">
+            <app-to-do-preview (deletedList)="onDeleted($event)" [selected_list]="list"></app-to-do-preview>
+        </div>
+    </div>
+</div>

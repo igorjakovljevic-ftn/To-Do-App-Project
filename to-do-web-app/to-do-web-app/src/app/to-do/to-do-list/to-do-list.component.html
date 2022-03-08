@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body d-flex flex-column">
+
+        <input #title class="form-control form-control-lg" type="text" [(ngModel)]="list.title"
+            (focusout)="updateTitle()">
+
+        <!-- Add -->
+        <!-- <input *ngIf="isAddMode" #title class="form-control form-control-lg" type="text" [(ngModel)]="list.title"> -->
+
+
+        <app-to-do-item (itemDeleted)="onDeleted()" *ngFor="let item of notCompleted"[listId]="list.id" [listItem]="item"></app-to-do-item>
+        <app-to-do-item (itemDeleted)="onDeleted()" *ngFor="let item of completed" [listId]="list.id" [listItem]="item"></app-to-do-item>
+
+        <hr />
+        <app-to-do-item (itemCreated)="onCreated($event)" [listId]="list.id"></app-to-do-item>
+    </div>
+</div>

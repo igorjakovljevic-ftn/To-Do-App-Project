@@ -1,0 +1,11 @@
+.row{
+    margin-top: 0.5rem;
+}
+
+#button{
+    border: none;
+    margin: none;
+    padding: none;
+    margin-left: 150px;
+}
+

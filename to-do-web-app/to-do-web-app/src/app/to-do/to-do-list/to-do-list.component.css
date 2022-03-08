@@ -1,0 +1,10 @@
+.form-control{
+    margin-top: 5px;
+}
+
+.card{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 15rem;
+    min-height: 20rem;
+}

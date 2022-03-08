@@ -1,0 +1,12 @@
+.card {
+    margin-top: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 15rem;
+    min-height: 20rem;
+}
+
+.btn {
+    width:90px;
+    padding:5px;
+}
