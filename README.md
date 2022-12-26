@@ -23,10 +23,8 @@ The API should support the following:
 * (optionally) Unit tests.
 
 The API will include the following technologies/service providers:
-* .Net Core 2 (Web API)
-* Entity Framework Core 2
-* [SendGrid](https://sendgrid.com/) email server provider
-
+* .Net Core (Web API)
+* Entity Framework Core
  
 ## Web Client
 
@@ -42,17 +40,3 @@ following:
  
 The client will include the following technologies:
 * Angular 7
-
-
-## Security & Deployment
-
-Web client & the API should support authentication and authorization. All three components, database, the api & web client should be hosted on Azure cloud.
-
-* Enable web client/the api authentication via bearer token provided from Auth0 identity provider.
-* Enable web client/the api authorization (e.g. only users with email domain *novalite.rs* have all rights, other can only access Dashboard page).
-* Expanding the database model with user information and updating the business logic to include user information.
-* Sharing of to-do-lists via link with expiration period (including background process to remove invalid validation links data).
-* Deploying the solution to the Azure cloud system.
-
-Security will include the following technologies/service provider
-* OAuth 2.0 (via [Auth0](https://auth0.com/) identity provider)
