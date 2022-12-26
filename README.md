@@ -1,9 +1,8 @@
 # To-Do List
 
-Is a web application for maintaining to-do lists (like [Google Keep](https://keep.google.com/)) and it is a part of Novalite student practice program. The application consists of 3 segments:
+Is a web application for maintaining to-do lists (like [Google Keep](https://keep.google.com/)) and it is a part of Novalite student practice program. The application consists of 2 segments:
 * [API](#the-api)
 * [Web Client](#web-client)
-* [Security & Deployment](#security-&-deployment)
 
 ## The API
 
